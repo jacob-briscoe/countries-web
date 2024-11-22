@@ -26,16 +26,16 @@
         "GitHub.vscode-pull-request-github",
         "eamodio.gitlens",
         "christian-kohler.path-intellisense",
-        "infinity1207.angular2-switcher",
-      ]
-      // "settings": {
-      //   "terminal.integrated.defaultProfile.linux": "zsh",
-      //   "terminal.integrated.profiles.linux": {
-      //     "zsh": {
-      //       "path": "/bin/zsh"
-      //     }
-      //   }
-      // }
+        "infinity1207.angular2-switcher"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh"
+          }
+        }
+      }
     }
   },
 
