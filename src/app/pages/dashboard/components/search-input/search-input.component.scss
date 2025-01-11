@@ -1,0 +1,24 @@
+.form-field {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 55px;
+  background-color: var(--elements-color);
+  border-radius: 5px;
+  width: 400px;
+  padding: 0 2rem;
+  box-shadow: var(--shadow);
+
+  &__mobile {
+    width: 100%;
+  }
+}
+
+input {
+  font-size: medium;
+  width: 100%;
+  color: var(--text-color);
+  border: none;
+  background-color: unset;
+}

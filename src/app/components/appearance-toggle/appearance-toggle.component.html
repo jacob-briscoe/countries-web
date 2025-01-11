@@ -1,0 +1,8 @@
+<button type="button" (click)="onToggle()">
+  <app-icon
+    disableAppearance
+    [baseIconFileName]="oppositeAppearanceIcon()"
+    [alt]="oppositeAppearanceLabel()"
+  />
+  <span class="label">{{ oppositeAppearanceLabel() }}</span>
+</button>

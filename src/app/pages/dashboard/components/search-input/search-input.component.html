@@ -1,0 +1,12 @@
+<div class="form-field" [ngClass]="{ 'form-field__mobile': isMobile() }">
+  <label class="pointer" for="searchCountry"
+    ><app-icon baseIconFileName="search.svg"
+  /></label>
+  <input
+    id="searchCountry"
+    type="search"
+    placeholder="Search for a country..."
+    [formControl]="searchCountry"
+    autocomplete="off"
+  />
+</div>

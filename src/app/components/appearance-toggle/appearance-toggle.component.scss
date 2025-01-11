@@ -1,0 +1,14 @@
+button {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.label {
+  color: var(--text-color);
+}

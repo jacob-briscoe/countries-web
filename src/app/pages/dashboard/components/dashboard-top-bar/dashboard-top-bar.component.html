@@ -1,0 +1,16 @@
+<div
+  [ngClass]="{
+    'dashboard-top-bar__mobile': isMobile(),
+    'dashboard-top-bar': !isMobile(),
+  }"
+>
+  <app-search-input
+    [searchQuery]="searchQuery()"
+    (searchInputChange)="onSearchInputChange($event)"
+  ></app-search-input>
+  <app-region-filter
+    [region]="region()"
+    [regions]="regions()"
+    (selectedRegion)="onSelectedRegion($event)"
+  ></app-region-filter>
+</div>

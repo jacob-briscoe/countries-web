@@ -1,0 +1,5 @@
+@for (country of countries(); track country.alpha3Code) {
+  <app-country-card [id]="country.alpha3Code" [country]="country" [routerLink]="['country', country.alpha3Code]"></app-country-card>
+} @empty {
+  <h2>No countries found</h2>
+}

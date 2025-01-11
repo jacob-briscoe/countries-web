@@ -1,0 +1,16 @@
+:host {
+  display: grid;
+  grid: repeat(auto-fill, 325px) / repeat(auto-fill, 250px);
+  grid-gap: 4rem;
+  justify-content: space-between;
+}
+
+app-country-card {
+  cursor: pointer;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

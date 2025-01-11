@@ -1,0 +1,68 @@
+:root {
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  --background-color: var(--light-mode-background);
+  --elements-color: var(--white);
+  --text-color: var(--light-mode-text);
+
+  --font-family: Nunito Sans, "Helvetica Neue", sans-serif;
+
+  --shadow: 0 1px 4px 0px hsla(0, 0%, 0%, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family), sans-serif;
+  font-size: 14px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.dark-mode {
+  --background-color: var(--dark-mode-background);
+  --elements-color: var(--dark-mode-elements);
+  --text-color: var(--white);
+}
+
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+input {
+  font-family: var(--font-family), sans-serif;
+}
+
+select {
+  font-family: var(--font-family), sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
+}

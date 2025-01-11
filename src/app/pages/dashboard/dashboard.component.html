@@ -1,0 +1,5 @@
+<app-dashboard-top-bar></app-dashboard-top-bar>
+<app-country-grid
+  [countries]="countries()"
+  [ngClass]="{ 'app-country-grid_mobile': isMobile() }"
+></app-country-grid>

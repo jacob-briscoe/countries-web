@@ -1,0 +1,74 @@
+<app-detail-top-bar [countryId]="id()"></app-detail-top-bar>
+<div
+  class="detail-container"
+  [ngClass]="{ 'detail-container_desktop': !isMobile() }"
+>
+  <img
+    [src]="model().flag"
+    [height]="isMobile() ? 200 : 400"
+    [width]="600"
+    [alt]="model().name"
+  />
+
+  <div class="detail">
+    <h2>{{ model().name }}</h2>
+    <div
+      class="detail-values-container"
+      [ngClass]="{ 'detail-values-container_desktop': !isMobile() }"
+    >
+      <ul>
+        <li>
+          <h3>Native Name:</h3>
+          <span class="detail-value">{{ model().nativeName }}</span>
+        </li>
+        <li>
+          <h3>Population:</h3>
+          <span class="detail-value">{{ model().population | number }}</span>
+        </li>
+        <li>
+          <h3>Region:</h3>
+          <span class="detail-value">{{ model().region }}</span>
+        </li>
+        <li>
+          <h3>Sub Region:</h3>
+          <span class="detail-value">{{ model().subregion }}</span>
+        </li>
+        <li>
+          <h3>Capital:</h3>
+          <span class="detail-value">{{ model().capital }}</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h3>Top Level Domain:</h3>
+          <span class="detail-value">{{ model().topLevelDomain }}</span>
+        </li>
+        <li>
+          <h3>Currencies:</h3>
+          <span class="detail-value">{{ model().currencies }}</span>
+        </li>
+        <li>
+          <h3>Languages:</h3>
+          <span class="detail-value">{{ model().languages }}</span>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="border-countries"
+      [ngClass]="{ 'border-countries_desktop': !isMobile() }"
+    >
+      <h3>Border Countries:</h3>
+      <div class="border-countries-list">
+        @for (border of model().borders; track border.alpha3Code) {
+          <app-button
+            size="small"
+            [routerLink]="['/country', border.alpha3Code]"
+            >{{ border.name }}</app-button
+          >
+        } @empty {
+          <h4>None</h4>
+        }
+      </div>
+    </div>
+  </div>
+</div>

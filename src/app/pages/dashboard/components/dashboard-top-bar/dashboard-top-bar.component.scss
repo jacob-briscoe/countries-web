@@ -1,0 +1,10 @@
+.dashboard-top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-top-bar__mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}

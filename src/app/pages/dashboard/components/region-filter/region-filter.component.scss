@@ -1,0 +1,39 @@
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  font-family: var(--font-family);
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  border: unset;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+
+  .selected-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background-color: var(--elements-color);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    z-index: 1;
+
+    .option {
+      padding: 1rem 2rem;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--light-mode-input);
+      }
+    }
+  }
+}

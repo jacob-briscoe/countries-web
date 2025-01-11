@@ -1,0 +1,19 @@
+<div
+  class="custom-dropdown"
+  (click)="toggleDropdown()"
+  (appClickOutside)="maybeCloseDropdown()"
+>
+  <div class="selected-option">
+    <span>{{ selectedOption() | titlecase }}</span>
+    <app-icon [baseIconFileName]="expansionIcon()" />
+  </div>
+  @if (isOpen()) {
+    <div class="options">
+      @for (region of selectableRegions(); track region) {
+        <div class="option" (click)="selectOption(region)">
+          {{ region | titlecase }}
+        </div>
+      }
+    </div>
+  }
+</div>

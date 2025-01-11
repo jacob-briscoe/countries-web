@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: medium;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: small;
+  font-weight: 300;
+}
+
+.detail-value {
+  font-size: medium;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &_desktop {
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-values-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &_desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.border-countries {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &_desktop {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.border-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
