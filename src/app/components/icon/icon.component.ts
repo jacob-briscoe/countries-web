@@ -29,7 +29,7 @@ export class IconComponent {
   appearance = inject(AppearanceService).currentAppearance;
 
   src = computed(() => {
-    const iconPath = ['/icons'];
+    const iconPath = ['icons'];
     const baseIconFileName = this.baseIconFileName();
     const disableAppearance = this.disableAppearance();
 
