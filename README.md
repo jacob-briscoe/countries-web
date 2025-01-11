@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/angular-countries-ywbyvLlJN7](https://www.frontendmentor.io/solutions/angular-countries-ywbyvLlJN7)
 - Live Site URL: [https://jacob-briscoe.github.io/countries-web/](https://jacob-briscoe.github.io/countries-web/)
 
 ## My process
